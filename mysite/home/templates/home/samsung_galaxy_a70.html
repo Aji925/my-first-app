@@ -1,0 +1,29 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/p.css' %}">
+</head>
+<body>
+
+<h1>Samsung Galaxy A70</h1>
+<img src="{% static 'home/image/SAMSUNG GALAXY A70 128GB.jpeg' %}" hspace="40" vspace="80" style="width:400px;height:400px;"/>
+<ul>
+<h2>Key Features:</h2>
+<li>17.02 cm (6.7 inch) FHD+ Display</li>
+<li>6 GB RAM | 128 GB ROM | Expandable Upto 512 GB</li>
+<li>32MP + 5MP + 8MP Triple Rear Camera | 32MP Front Camera</li>
+<li>Qualcomm Snapdragon SM6150 2.0 GHz, 1.7 GHz Octa Core Processor</li>
+<li>4500 mAh Lithium-ion Battery</li>
+<li>Android v9.0 (Pie) OS</li>
+<li>1 Year Manufacturer Warranty</li>
+<li>Price:Rs.29,999</li>
+</ul>
+<form action="/samsung_galaxy_a70/" method="POST">
+{% csrf_token %}
+<input type="submit" value="Buy">
+</form>
+</body>
+
+</html>

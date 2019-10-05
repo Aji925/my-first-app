@@ -1,0 +1,30 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/p.css' %}">
+</head>
+<body>
+
+<h1>Oppo Reno 10x Zoom</h1>
+<img src="{% static 'home/image/oppo reno 10x zoom.jpeg' %}" hspace="40" vspace="80" style="width:400px;height:400px;"/>
+<ul>
+<h2>Key Features:</h2>
+<li>16.76 cm (6.6 inch) AMOLED Display | In-display Fingerprint Sensor</li>
+<li>8 GB RAM | 256 GB ROM | Expandable Upto 256 GB</li>
+<li>48MP + 8MP + 13MP Triple Rear Camera | 16MP Front Camera</li>
+<li>Qualcomm Snapdragon 855 2.8 GHz Octa Core Processor</li>
+<li>4065 mAh Battery</li>
+<li>VOOC 3.0 Fast Charging</li>
+<li>Android v9.0 (Pie) OS</li>
+<li>1 Year Manufacturer Warranty</li>
+<li>Price:Rs.55,999</li>
+</ul>
+<form action="/oppo_reno_10x_zoom/" method="POST">
+{% csrf_token %}
+<input type="submit" value="Buy">
+</form>
+</body>
+
+</html>

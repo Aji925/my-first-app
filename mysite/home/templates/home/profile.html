@@ -1,0 +1,114 @@
+
+<html>
+<head><title>Profile</title>
+<style type="text/css">
+#ProfilePage
+{
+    /* Move it off the top of the page, then centre it horizontally */
+    margin: 50px auto;
+    width: 635px;
+/* For visibility. Delete me */
+border: 1px solid red;
+}
+#LeftCol
+{
+    /* Move it to the left */
+    float: left;
+    width: 200px;
+    text-align: center;
+    /* Move it away from the content */
+    margin-right: 20px;
+/* For visibility. Delete me */
+border: 1px solid brown;
+}
+#Photo
+{
+    /* Width and height of photo container */
+    width: 200px;
+    height: 200px;
+/* For visibility. Delete me */
+border: 1px solid green;
+}
+#PhotoOptions
+{
+    text-align: center;
+    width: 200px;
+/* For visibility. Delete me */
+border: 1px solid brown;
+}
+#Info
+{
+    width: 400px;
+    text-align: center;
+    /* Move it to the right */
+    float: right;
+/* For visibility. Delete me */
+border: 1px solid blue;
+}
+#Info strong
+{
+    /* Give it a width */
+    display: inline-block;
+    width: 100px;
+/* For visibility. Delete me */
+border: 1px solid orange;
+}
+#Info span
+{
+    /* Give it a width */
+    display: inline-block;
+    width: 250px;
+/* For visibility. Delete me */
+border: 1px solid purple;
+}
+</style>
+<div id="ProfilePage">
+    <div id="LeftCol">
+        </head>
+<body>
+<table>
+<img style="margin-left:25px;" src="{{ MEDIA_URL }}home/profile_img/{{ image }}" width="200" height="200" />
+</table>
+</form>
+<fieldset>Profile Image</fieldset>
+        </div>
+    </div>
+    <div id="Info">
+        <p>
+            <strong>User name:</strong>
+            <span>{{ username }}</span>
+        </p>
+        <p>
+            <strong>Email Id:</strong>
+            <span>{{ email }}</span>
+        </p>
+        <p>
+            <strong>Mobile Number:</strong>
+            <span>{{ mobile }}</span>
+        </p>
+        <p>
+            <strong>First Name:</strong>
+            <span>{{ fname }}</span>
+        </p>
+        <p>
+            <strong>Middle Name:</strong>
+            <span>{{ mname }}</span>
+        </p>
+		<p>
+            <strong>Last Name:</strong>
+            <span>{{ lname }}</span>
+        </p>
+		<p>
+            <strong>Address:</strong>
+            <span>{{ address }}</span>
+        </p>
+    </div>
+    <!-- Needed because other elements inside ProfilePage have floats -->
+    <div style="clear:both"></div>
+</div>
+
+<br>
+
+<a href="{% url 'home:home' %}">Back to home</a>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/p.css' %}">
+</head>
+<body>
+
+<h1>Xiaomi Redmi K20 </h1>
+<img src="{% static 'home/image/xiomi redmi k20.jpeg' %}" hspace="40" vspace="80" style="width:400px;height:400px;"/>
+<ul>
+<h2>Key Features:</h2>
+<li>16.23 cm (6.39 inch) FHD+ Display</li>
+<li>6 GB RAM and 64 GB ROM</li>
+<li>20 MP Front Camera and 48 MP + 13 MP + 8 MP Primary Camera</li>
+<li>2.2 GHz Qualcomm Snapdragon 730 Octa Core Processor</li>
+<li>4000 mAh Battery</li>
+<li>Android 9 Pie OS</li>
+<li>1 Year Manufacturer Warranty</li>
+<li>Price:Rs.22980</li>
+</ul>
+
+<form action="/xiaomi_redmi_k20/" method="POST">
+{% csrf_token %}
+<input type="submit" value="Buy">
+</form>
+</body>
+
+</html>

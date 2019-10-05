@@ -1,0 +1,27 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/p.css' %}">
+</head>
+<body>
+
+<h1>Motorola One Vision</h1>
+<img src="{% static 'home/image/motorola one vision.jpeg' %}" hspace="40" vspace="80" style="width:400px;height:400px;"/>
+<ul>
+<h2>Key Features:</h2>
+<li>4 GB RAM | 128 GB ROM | Expandable Upto 256 GB</li>
+<li>16.0 cm (6.3 inch) FHD+ Display</li>
+<li>48MP + 5MP | 25MP Front Camera</li>
+<li>3500 mAh Battery</li>
+<li>Samsung Exynos 9609 Processor</li>
+<li>Price:Rs.19,999</li>
+</ul>
+<form action="/motorola_one_vision/" method="POST">
+{% csrf_token %}
+<input type="submit" value="Buy">
+</form>
+</body>
+
+</html>

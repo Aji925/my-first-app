@@ -1,0 +1,31 @@
+{% load static from staticfiles %}
+<html>
+<head>
+
+<title>Login Form</title>
+
+     <link rel="stylesheet" type="text/css" href="{% static 'home/css/a.css' %}">
+
+<body>
+     <div class="loginbox">
+     <img src="{% static 'home/image/avatar.png' %}" class="avatar">
+	<h1>Login Here</h1>
+        <form action="/login/" method="post">
+          {% csrf_token %}
+		<label>Username</label>
+          <input type="text" name="username" placeholder="Enter Username">
+        <label>Password</label>
+		<input type="password" name="password" placeholder="Enter Password">
+          {{error}}
+          <br>
+          <input type="submit" name="" value="Login">
+       </form>
+
+        
+	<a href="{% url 'home:signup' %}">Don't have an account</a>
+
+      
+     </div>
+</body>
+</head>
+</html>

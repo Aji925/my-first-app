@@ -1,0 +1,28 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/p.css' %}">
+</head>
+<body>
+
+<h1>Huawei P30 Pro</h1>
+<img src="{% static 'home/image/HUAWEI P30 PRO 256GB.jpeg' %}" hspace="40" vspace="80" style="width:400px;height:400px;"/>
+<ul>
+<h2>Key Features:</h2>
+<li>6.47 inch OLED Display | Fingerprint Scanner</li>
+<li>8 GB RAM | 256 GB ROM | Expandable Upto 256 GB</li>
+<li>40MP + 20MP + 8MP Triple Rear Camera | 32MP Front Camera</li>
+<li>4200 mAh Battery</li>
+<li>2.6 GHz Octa Core Processor</li>
+<li>Android v9.0 (Pie) OS</li>
+<li>Price:Rs.71,990</li>
+</ul>
+<form action="/huawei_p30_pro/" method="POST">
+{% csrf_token %}
+<input type="submit" value="Buy">
+</form>
+</body>
+
+</html>

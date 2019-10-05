@@ -1,0 +1,29 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/p.css' %}">
+</head>
+<body>
+
+<h1>Xiaomi Redmi K20 Pro</h1>
+<img src="{% static 'home/image/Xiaomi redmi K20 pro.jpeg' %}" hspace="40" vspace="80" style="width:400px;height:400px;"/>
+<ul>
+<h2>Key Features:</h2>
+<li>16.23 cm (6.39 inch) FHD+ Display | Fingerprint Sensor</li>
+<li>6 GB RAM | 128 GB ROM</li>
+<li>48MP + 13MP + 8MP Triple Rear Camera | 20MP Front Camera</li>
+<li>Qualcomm Snapdragon 855 2.84 GHz Processor</li>
+<li>4000 mAh Li-polymer Battery</li>
+<li>Android v9.0 (Pie) OS</li>
+<li>1 Year Manufacturer Warranty</li>
+<li>Price:Rs.25,999</li>
+</ul>
+<form action="/xiaomi_redmi_k20_pro/" method="POST">
+{% csrf_token %}
+<input type="submit" value="Buy">
+</form>
+</body>
+
+</html>

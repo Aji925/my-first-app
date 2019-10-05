@@ -1,0 +1,29 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/p.css' %}">
+</head>
+<body>
+
+<h1>Samsung Galaxy S10E</h1>
+<img src="{% static 'home/image/SAMSUNG GALAXY S10E.jpeg' %}" hspace="40" vspace="80" style="width:400px;height:400px;"/>
+<ul>
+<h2>Key Features:</h2>
+<li>14.73 cm (5.8 inch) FHD+ Display | Fingerprint Scanner</li>
+<li>6 GB RAM | 128 GB ROM | Expandable Upto 512 GB</li>
+<li>16MP + 12MP Rear Camera | 10MP Front Camera</li>
+<li>3100 mAh Lithium-ion Battery</li>
+<li>Exynos 9 9820 2.2 GHz Octa Core Processor</li>
+<li>Android v9.0 (Pie) OS</li>
+<li>1 Year Manufacturer Warranty</li>
+<li>Price:Rs.25,999</li>
+</ul>
+<form action="/samsung_galaxy_s10e/" method="POST">
+{% csrf_token %}
+<input type="submit" value="Buy">
+</form>
+</body>
+
+</html>

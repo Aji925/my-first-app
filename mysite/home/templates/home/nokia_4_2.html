@@ -1,0 +1,29 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/p.css' %}">
+</head>
+<body>
+
+<h1>Nokia 4.2</h1>
+<img src="{% static 'home/image/NOKIA 4.2.jpeg' %}" hspace="40" vspace="80" style="width:400px;height:400px;"/>
+<ul>
+<h2>Key Features:</h2>
+<li>14.5 cm (5.71 inch) HD+ Display</li>
+<li>3 GB RAM | 32 GB ROM | Expandable Upto 400 GB</li>
+<li>13.0MP + 2.0MP | 8.0MP Front Camera</li>
+<li>Qualcomm Snapdragon 439 2.0 GHz Octa Core Processor</li>
+<li>Android v9.0 (Pie) OS</li>
+<li>3000.0 mAh Battery</li>
+<li>1 Year Manufacturer Warranty</li>
+<li>Price:Rs.8,890</li>
+</ul>
+<form action="/nokia_4_2/" method="POST">
+{% csrf_token %}
+<input type="submit" value="Buy">
+</form>
+</body>
+
+</html>

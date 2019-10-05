@@ -1,0 +1,31 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/stylep.css' %}">
+</head>
+<body>
+
+<h1>Realme3 Pro</h1>
+<img src="{% static 'home/image/realme3 pro.jpeg' %}" hspace="40" vspace="80" style="width:400px;height:400px;"/>
+<ul>
+<h2>Key Features:</h2>
+<li>16.0 cm (6.3 inch) FHD+ Display | Fingerprint Sensor | 2.5D, Gorilla Glass 5</li>
+<li>4 GB RAM | 64 GB ROM | Expandable Upto 256 GB</li>
+<li>16MP + 5MP Dual Rear Camera | 25MP Front Camera</li>
+<li>Qualcomm Snapdragon 710 2.2 GHz AIE Octa Core Processor</li>
+<li>4045 mAh Battery</li>
+<li>VOOC Flash Charge 3.0</li>
+<li>Dual Nano SIM Slot and Memory Card Slot</li>
+<li>Android v9.0 (Pie) OS</li>
+<li>1 Year Manufacturer Warranty</li>
+<li>Price:Rs.13,200</li>
+</ul>
+<form action="/realme3_pro/" method="POST">
+{% csrf_token %}
+<input type="submit" value="Buy">
+</form>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+{% load static from staticfiles %}
+<html>
+<head>
+
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/b.css' %}">
+<body>
+<marquee>Welcome to Easyshop</marquee>
+<br>
+<a href="{% url 'home:logout' %}">Logout</a>
+<br>
+<a href="{% url 'home:profile' %}">View Profile</a>
+<br>
+<div class="row">
+<div class="column">
+<a href="{% url 'home:xiaomi_redmi_k20_pro' %}"><img src="{% static 'home/image/Xiaomi redmi K20 pro.jpeg' %}" hspace="40" vspace="80" style="width:128px;height:128px;"/><p>Xiaomi Redmi K20 Pro</p></a>
+</div>
+<div class="column">
+<a href="{% url 'home:xiaomi_redmi_k20' %}"><img src="{% static 'home/image/xiomi redmi k20.jpeg' %}" hspace="40" vspace="80" style="width:128px;height:128px;" hspace:"200"/><p>Xiomi Redmi K20</p></a>
+</div>
+<div class="column">
+<a href="{% url 'home:one_plus_7' %}"><img src="{% static 'home/image/one plus 7 256Gb.jpeg' %}" hspace="40" vspace="80" style="width:128px;height:128px;" hspace:"200"/><p>One Plus 7</p></a>
+</div>
+<div class="column">
+<a href="{% url 'home:one_plus_7_pro' %}"><img src="{% static 'home/image/one plus 7 pro 12 gb ram.jpeg' %}" hspace="40" vspace="80" style="width:128px;height:128px;" hspace:"200"/><p>One Plus 7 Pro</p></a>
+</div>
+<div class="column">
+<a href="{% url 'home:motorola_one_vision' %}"><img src="{% static 'home/image/motorola one vision.jpeg' %}" hspace="40" vspace="80" style="width:128px;height:128px;" hspace:"200"/><p>Motorola One Vision</p></a>
+</div>
+<div class="column">
+<a href="{% url 'home:xiaomi_redmi_y3' %}"><img src="{% static 'home/image/Xiomi redmi y3.jpeg' %}" hspace="40" vspace="80" style="width:128px;height:128px;" hspace:"200"/><p>Xiomi Redmi Y3</p></a>
+</div>
+</div>
+
+
+<div class="row">
+<div class="column">
+<a href="{% url 'home:realme3_pro' %}"><img src="{% static 'home/image/realme3 pro.jpeg' %}" hspace="40" vspace="80" style="width:128px;height:128px;" hspace:"200"/><p>Realme 3 Pro</p></a>
+</div>
+<div class="column">
+<a href="{% url 'home:oppo_reno_10x_zoom' %}"><img src="{% static 'home/image/oppo reno 10x zoom.jpeg' %}" hspace="40" vspace="80" style="width:128px;height:128px;" hspace:"200"><p>Oppo Reno 10x Zoom</p></a>
+</div>
+<div class="column">
+<a href="{% url 'home:samsung_galaxy_a70' %}"><img src="{% static 'home/image/SAMSUNG GALAXY A70 128GB.jpeg' %}" hspace="40" vspace="80" style="width:128px;height:128px;" hspace:"200"/><p>Samsung Galaxy A70</p></a>
+</div>
+<div class="column">
+<a href="{% url 'home:huawei_p30_pro' %}"><img src="{% static 'home/image/HUAWEI P30 PRO 256GB.jpeg' %}" hspace="40" vspace="80" style="width:128px;height:128px;" hspace:"200"/><p>Huawei P30 Pro</p></a>
+</div>
+<div class="column">
+<a href="{% url 'home:nokia_4_2' %}"><img src="{%static 'home/image/NOKIA 4.2.jpeg' %}" hspace="40" vspace="80" style="width:128px;height:128px;" hspace:"200"/><p>Nokia 4.2</p></a>
+</div>
+<div class="column">
+<a href="{% url 'home:samsung_galaxy_s10e' %}"><img src="{% static 'home/image/SAMSUNG GALAXY S10E.jpeg' %}" hspace="40" vspace="80" style="width:128px;height:128px;" hspace:"200"/><p>Samsung Galaxy S10E</p></a>
+</div>
+</div>
+<br>
+{{success}}
+</body>
+</head>
+</html>

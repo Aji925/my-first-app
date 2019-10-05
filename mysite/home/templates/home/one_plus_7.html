@@ -1,0 +1,30 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/p.css' %}">
+</head>
+<body>
+
+<h1>One Plus 7</h1>
+<img src="{% static 'home/image/one plus 7 256Gb.jpeg' %}" hspace="40" vspace="80" style="width:400px;height:400px;"/>
+<ul>
+<h2>Key Features:</h2>
+<li>16.28 cm (6.41 inch) Optic AMOLED Display | 2.5D Corning Gorilla Glass</li>
+<li>Face Unlock | Fingerprint Sensor</li>
+<li>8 GB RAM | 256 GB ROM</li>
+<li>48MP + 5MP Dual Rear Camera | 16MP Front Camera</li>
+<li>2.84 GHz Snapdragon 855 Qualcomm Octa Core Processor</li>
+<li>3700 mAh Battery</li>
+<li>Android v9.0 (Pie) OS</li>
+<li>1 Year Manufacturer Warranty</li>
+<li>Price:Rs.41000</li>
+</ul>
+<form action="/one_plus_7/" method="POST">
+{% csrf_token %}
+<input type="submit" value="Buy">
+</form>
+</body>
+
+</html>

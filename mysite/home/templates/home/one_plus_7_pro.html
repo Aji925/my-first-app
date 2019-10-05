@@ -1,0 +1,29 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/stylep.css' %}">
+</head>
+<body>
+
+<h1>One Plus 7 Pro</h1>
+<img src="{% static 'home/image/one plus 7 pro 12 gb ram.jpeg' %}" hspace="40" vspace="80" style="width:400px;height:400px;"/>
+<ul>
+<h2>Key Features:</h2>
+<li>16.9 cm (6.67 inch) Super AMOLED Display | Fingerprint Sensor</li>
+<li>6GB RAM | 128GB ROM</li>
+<li>48MP + 8MP + 16MP Triple Rear Camera | 16MP Front Camera</li>
+<li>2.84 GHz Octa Core Processor</li>
+<li>4000 mAh Battery</li>
+<li>Android v9.0 (Pie) OS</li>
+<li>1 Year Manufacturer Warranty</li>
+<li>Price:Rs.55,555</li>
+</ul>
+<form action="/one_plus_7_pro/" method="POST">
+{% csrf_token %}
+<input type="submit" value="Buy">
+</form>
+</body>
+
+</html>

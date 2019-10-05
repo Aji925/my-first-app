@@ -1,0 +1,30 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/p.css' %}">
+</head>
+<body>
+
+<h1>Xiaomi Redmi Y3</h1>
+<img src="{% static 'home/image/Xiomi redmi y3.jpeg' %}" hspace="40" vspace="80" style="width:400px;height:400px;"/>
+<ul>
+<h2>Key Features:</h2>
+<li>15.9 cm (6.26 inch) IPS LCD Display | Fingerprint Sensor</li>
+<li>3 GB RAM | 128 GB ROM</li>
+<li>12MP + 2MP dual Rear Camera | 32MP Front Camera</li>
+<li> Snapdragon 632 2.84 GHz Processor</li>
+<li>4000 mAh Li-polymer Battery</li>
+<li>Android v9.0 (Pie) OS</li>
+<li>1 Year Manufacturer Warranty</li>
+<li>Price:Rs.8,554</li>
+</ul>
+
+<form action="/xiaomi_redmi_y3/" method="POST">
+{% csrf_token %}
+<input type="submit" value="Buy">
+</form>
+</body>
+
+</html>

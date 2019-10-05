@@ -1,0 +1,27 @@
+{ % load static %}
+<html>
+<head>
+
+<title>Login Form</title>
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+     <link rel="stylesheet" href="{% static "home/a.css" %}">
+
+</head>
+<body>
+     <div class="loginbox">
+     <img src="{% static "home/avatar.png" %}" class="avatar">
+	<h1>Login Here</h1>
+        <form>
+	<p>Username</p>
+	<input type="text" name="" placeholder="Enter Username">
+        <p>Password</p>
+	<input type="password" name="" placeholder="Enter Password">
+	<input type="submit" name="" value="Login">
+	<a href="#">Lost your password?</a><br>
+	<a href="#">Don't have an account</a>
+
+        </form>
+     </div>
+</body>
+</html>
